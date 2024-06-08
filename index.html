@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 17 meses de novios amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feliz 17 meses de novios amor</h1>
+        <button onclick="showEnvelopes()">Ver Cartas</button>
+        <div id="envelopes" class="envelope-container">
+            <div class="envelope" onclick="openEnvelope('triste')">
+                <img src="images/triste.jpg" alt="Cuando estés triste">
+                <p>Cuando estés triste</p>
+            </div>
+            <div class="envelope" onclick="openEnvelope('abrazo')">
+                <img src="images/abrazo.jpg" alt="Cuando necesites un abrazo">
+                <p>Cuando necesites un abrazo</p>
+            </div>
+            <div class="envelope" onclick="openEnvelope('feliz')">
+                <img src="images/feliz.jpg" alt="Cuando estés feliz">
+                <p>Cuando estés feliz</p>
+            </div>
+            <div class="envelope" onclick="openEnvelope('sola')">
+                <img src="images/sola.jpg" alt="Cuando te sientas sola">
+                <p>Cuando te sientas sola</p>
+            </div>
+            <div class="envelope" onclick="openEnvelope('aniversario')">
+                <img src="images/aniversario.jpg" alt="Feliz 17 meses ABRIME YA!">
+                <p>Feliz 17 meses ABRIME YA!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="envelope-content"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
